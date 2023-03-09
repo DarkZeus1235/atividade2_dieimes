@@ -1,40 +1,30 @@
-<html>
- <head>
-  <title>Atividade2</title>
- </head>
- <body>
- <form action="" method="get">
-  Digite um número:  <input type="number" name="number" /><br />
-  <input type="submit" name="submit" value="Testar" />
- </form> 
- <?php 
-  $numero = $_GET['number'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<body>
+    <?php
+    $valor = $_GET['number'];
+    $valor = 2;
+    $valor1 = 15;
 
-  if($numero % 2 == 0)
-   echo "$numero é par";
-  else
-   echo "$numero é ímpar";
- ?>
- </body>
-</html>
-Paralelamente, todo número ímpar possui resto da divisão por 2 igual a 1.
-Então podemos resolver este tutorial da seguinte forma:
-<html>
- <head>
-  <title>Apostila PHP Progressivo</title>
- </head>
- <body>
- <form action="" method="get">
-  Digite um número:  <input type="number" name="number" /><br />
-  <input type="submit" name="submit" value="Testar" />
- </form> 
- <?php 
-  $numero = $_GET['number'];
+    if($valor1 % 2 == 0)
+    echo "$valor é ímpar";
 
-  if($numero % 2 == 1)
-   echo "$numero é ímpar";
-  else
-   echo "$numero é par";
- ?>
- </body>
+    else
+    echo "$valor é par";
+
+    echo("</br>");
+
+    if($valor % 2 == 1)
+    echo "$valor1 é par";
+
+    else
+    echo "$valor1 é ímpar";
+    ?>
+</body>
 </html>
